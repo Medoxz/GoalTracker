@@ -1,3 +1,13 @@
+body {
+    margin: 0px;
+}
+
 header {
-    display: block;
+    position: sticky;
+    top: 0px;
+    background-color: #5DA7DB;
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    justify-content: space-between;
 }
