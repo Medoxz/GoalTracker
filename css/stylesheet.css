@@ -100,5 +100,5 @@ nav a {
 }
 
 table {
-    tr:hover {background-color: coral;}
+    display: flex;
 }
