@@ -10,8 +10,8 @@ header {
     top: 0px;
     height: 150px;
     width: 100vw;
-    z-index: 5;
     padding: 0px;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +51,7 @@ nav a {
     top: 0;
     left: 50px;
     right: 50px;
-    z-index: -5;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,8 +61,40 @@ nav a {
     background-color: #81C6E8;
     transform: translateY(15%);
     font-size: 24px;
-    width: 370px;
-    height: 370px;
+    width: 290px;
+    height: 290px;
     border-radius: 30px;
     padding : 80px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+#loginForm input {
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+#password::placeholder {
+    transform: translateY(30%);
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+#loginForm button {
+    background-color: #6595fd;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    border-width: 0;
 }
