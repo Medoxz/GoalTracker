@@ -44,7 +44,7 @@ nav a {
     width: 100px;
 }
 
-#backPanel {
+.backPanel {
     background-color: #7DE5ED;
     position: fixed;
     bottom: 0;
