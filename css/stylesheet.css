@@ -1,15 +1,24 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
+    width: 100vw;
+    max-width: 100%;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: #5DA7DB;
-    position: absolute;
+    position: sticky;
     top: 0px;
     height: 150px;
     width: 100vw;
+    max-width: 100%;
     padding: 0px;
     z-index: 1;
     display: flex;
@@ -42,14 +51,17 @@ nav a {
 .logo {
     margin: 50px;
     width: 100px;
+    height: 100px;
     user-select: none;
 }
 
 #backPanel {
     background-color: #7DE5ED;
-    position: fixed;
-    bottom: 0;
-    top: 0;
+    min-height: 100vh;
+    max-width: 90vw;
+    position: relative;
+    /* bottom: 0;
+    top: 0; */
     left: 50px;
     right: 50px;
     z-index: 0;
@@ -62,18 +74,20 @@ nav a {
 
 #loginPanel {
     background-color: #81C6E8;
+    display:flex;
+    flex-direction: column;
     transform: translateY(15%);
     font-size: 24px;
     width: 290px;
     height: 290px;
     border-radius: 30px;
     padding : 80px;
+    align-items: center;
 }
 
 #loginForm {
     display: flex;
     flex-direction: column;
-    z-index: 10;
 }
 
 #loginForm input {
@@ -102,8 +116,105 @@ nav a {
     border-width: 0;
 }
 
+#loginPanel a {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: black;
+}
+
+#loginPanel a:hover {
+    color: blue;
+}
+
+
 /* ---------------------  register page ---------------------- */
 
-#registerForm {
-    
+#registerPanel {
+    background-color: #81C6E8;
+    font-size: 24px;
+    min-width: 0px;
+    width: 900px;
+    height: 1150px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding : 80px;
+    padding-left: 100px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#registerPanel h1 {
+    line-height: 0;
+    padding-bottom: 25px;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+
+#registerPanel h3 {
+    line-height: 0;
+    padding-top: 75px;
+    font-size: 30px;
+}
+
+#registerPanel form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registerPanel label {
+    padding-top: 25px;
+    font-size: 24px;
+}
+
+#registerPanel input {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 280px 170px 210px;
+}
+
+#registerPanel .grid-container input, 
+#registerPanel .grid-container select {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 2px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#registerPanel textarea {
+    width: 100%;
+    min-height: 90px;
+    max-height: 200px;
+    font-size: 20px;
+    resize: none;
+    border-radius: 10px;
+    border-width: 2px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#registerPanel button {
+    background-color: #6595fd;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    border-width: 0;
 }

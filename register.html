@@ -22,8 +22,69 @@
     
     <div id="backPanel">
         <div id="registerPanel">
+            <h1>Create your account</h1>
             <form action="" id="registerForm">
-                
+                <label for="username">Username</label>
+                <input required type="text" name="uname" id="">
+                <label for="password">Password</label>
+                <input required type="password" name="password" id="">
+                <h3>Personal info</h3>
+                <div class="grid-container">
+                    <div>
+                        <label for="fullname">Full name</label>
+                        <input required type="text" name="fullname">
+                    </div>
+
+                    <div>
+                        <label for="sex">Sex</label>
+                        <select required name="sex" id="sex-select">
+                            <option disabled selected hidden value="">Please choose</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="language">Language</label>
+                        <select required name="language" id="">
+                            <option disabled selected hidden value="">Please choose</option>
+                            <option value="nl">Nederlands</option>
+                            <option value="en">Engels</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="address">Address</label>
+                        <input required type="text" name="address" id="">
+                    </div>
+
+                    <div>
+                        <label for="zip-code">ZIP Code</label>
+                        <input required type="text" name="zip-code" id="">
+                    </div>
+                    
+                    <div>
+                        <label for="country">Country</label>
+                        <select required  name="country" id="">
+                            <option disabled selected hidden value="">Please choose</option>
+                            <option value="nl">Nederland</option>
+                            <option value="en">Engeland</option>
+                            <option value="usa">United States of America</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input required type="email" name="email" id="">
+                    </div>
+
+                </div>
+
+                <label for="personal-bio">Personal bio</label>
+                <textarea name="personal-bio" id="" cols="30" rows="1"></textarea>
+
+                <button type="submit">Submit</button>
             </form>
         </div>
 
