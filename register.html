@@ -25,14 +25,14 @@
             <h1>Create your account</h1>
             <form action="" id="registerForm">
                 <label for="username">Username</label>
-                <input required type="text" name="uname" id="">
+                <input required type="text" name="uname" id="uname">
                 <label for="password">Password</label>
-                <input required type="password" name="password" id="">
+                <input required type="password" name="password" id="password">
                 <h3>Personal info</h3>
                 <div class="grid-container">
                     <div>
                         <label for="fullname">Full name</label>
-                        <input required type="text" name="fullname">
+                        <input required type="text" name="fullname" id="fullname">
                     </div>
 
                     <div>
@@ -47,7 +47,7 @@
 
                     <div>
                         <label for="language">Language</label>
-                        <select required name="language" id="">
+                        <select required name="language" id="language">
                             <option disabled selected hidden value="">Please choose</option>
                             <option value="nl">Nederlands</option>
                             <option value="en">Engels</option>
@@ -56,17 +56,17 @@
                     
                     <div>
                         <label for="address">Address</label>
-                        <input required type="text" name="address" id="">
+                        <input required type="text" name="address" id="address">
                     </div>
 
                     <div>
                         <label for="zip-code">ZIP Code</label>
-                        <input required type="text" name="zip-code" id="">
+                        <input required type="text" name="zip-code" id="zip-code">
                     </div>
                     
                     <div>
                         <label for="country">Country</label>
-                        <select required  name="country" id="">
+                        <select required  name="country" id="country">
                             <option disabled selected hidden value="">Please choose</option>
                             <option value="nl">Nederland</option>
                             <option value="en">Engeland</option>
@@ -76,19 +76,21 @@
 
                     <div>
                         <label for="email">Email</label>
-                        <input required type="email" name="email" id="">
+                        <input required type="email" name="email" id="email">
                     </div>
 
                 </div>
 
                 <label for="personal-bio">Personal bio</label>
-                <textarea name="personal-bio" id="" cols="30" rows="1"></textarea>
+                <textarea name="personal-bio" id="personal-bio" cols="30" rows="1"></textarea>
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit-button">Submit</button>
             </form>
         </div>
 
     </div>
 
+    
+    <script src="js/tempFormScript.js"></script>
 </body>
 </html>
