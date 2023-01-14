@@ -133,6 +133,6 @@ nav a {
 #table td {
 }
 
-#table tr:hover {
+#tableBody tr:hover {
     background-color: #7DE5ED;
 }
