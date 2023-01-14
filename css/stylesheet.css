@@ -127,6 +127,7 @@ nav a {
 
 #table th {
     height = 30px;
+    border-bottom: 1px solid #ddd;
 }
 
 #table td {
