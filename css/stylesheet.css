@@ -219,6 +219,22 @@ nav a {
     border-width: 0;
 }
 
+/* ---------------------  account page  ---------------------- */
+
+#accountPanel {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+
 /* ---------------------  goallist page ---------------------- */
 
 #listPanel {
