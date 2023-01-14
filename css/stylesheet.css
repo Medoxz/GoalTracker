@@ -118,4 +118,14 @@ nav a {
     height: 290px;
     border-radius: 30px;
     padding : 80px;
-}    
+}  
+
+#table {
+    border: 1px solid;
+    border-collapse: collapse;
+    
+}
+
+#table th {
+    height = 30px;
+}
