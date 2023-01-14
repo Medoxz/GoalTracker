@@ -218,3 +218,62 @@ nav a {
     font-size: 24px;
     border-width: 0;
 }
+
+/* ---------------------  goallist page ---------------------- */
+
+#listPanel {
+    background-color: #81C6E8;
+    transform: translateY(15%);
+    font-size: 24px;
+    width: 580px;
+    height: 290px;
+    border-radius: 30px;
+    padding : 20px;
+}  
+
+#table {
+    border: 1px solid;
+    
+}
+
+/* ---------------------  goallist page ---------------------- */
+
+#listPanel {
+    background-color: #81C6E8;
+    transform: translateY(15%);
+    font-size: 24px;
+    width: 580px;
+    height: 290px;
+    border-radius: 30px;
+    padding : 20px;
+}  
+
+#table {
+    border: 1px solid;
+    
+}
+
+#table th {
+    height = 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+#table td {
+}
+
+#tableBody tr:hover {
+    background-color: #7DE5ED;
+}
+
+#table th {
+    height = 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+#table td {
+}
+
+#tableBody tr:hover {
+    background-color: #7DE5ED;
+}
+
