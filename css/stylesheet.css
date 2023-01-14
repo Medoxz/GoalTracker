@@ -254,7 +254,7 @@ nav a {
 }
 
 #table th {
-    height = 30px;
+    height: 30px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -266,7 +266,7 @@ nav a {
 }
 
 #table th {
-    height = 30px;
+    height: 30px;
     border-bottom: 1px solid #ddd;
 }
 
