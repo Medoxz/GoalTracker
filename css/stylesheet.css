@@ -234,6 +234,12 @@ nav a {
     border-radius: 100%;
 }
 
+#accountPanel #bioPanel {
+    background-color: #81C6E8;
+    min-width: 600px;
+    min-height: 170px;
+}
+
 
 /* ---------------------  goallist page ---------------------- */
 
