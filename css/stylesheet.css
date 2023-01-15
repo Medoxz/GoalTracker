@@ -282,7 +282,7 @@ nav a {
     padding : 20px;
     overflow-x: auto;
     position: absolute;
-}
+}  
 
 #progressText {
     position: absolute;
@@ -352,7 +352,7 @@ nav a {
 #tableBody a {
     display: flex;
     text-decoration: none;
-  }
+}
 
 #tableBody a:link {
     color: black;
@@ -395,7 +395,6 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding-left: 30px;
 }
 
 #goalPanel #details {
@@ -429,8 +428,12 @@ nav a {
     justify-content: center;
 }
 
+
+
 #goalPanel .target {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
     height: 40px;
     border-radius: 5px;
     background-color: #5DA7DB;
@@ -438,16 +441,28 @@ nav a {
 }
 
 #goalPanel .target form {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    gap: 5px;
+    width: 100%;
     align-items: center;
-    margin: 0px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#goalPanel .target.numeric form {
+    grid-template-columns: 10px 1fr 30px 0px 30px 80px;
+}
+
+#goalPanel .target.boolean form {
+    grid-template-columns: 10px 1fr;
 }
 
 #goalPanel .target form #target-name {
     background-color: transparent;
     border-width: 0;
     border-bottom-width: 1px;
+    min-width: 10px;
+    width: 100%;
 }
 
 #goalPanel .target.numeric #counter,
@@ -459,6 +474,47 @@ nav a {
     border-width: 0;
     border-bottom-width: 1px;
     margin: 5px;
+    text-align: center;
+}
+
+#goalPanel .target.numeric #counter::-webkit-outer-spin-button,
+#goalPanel .target.numeric #counter::-webkit-inner-spin-button,
+#goalPanel .target.numeric #count::-webkit-outer-spin-button,
+#goalPanel .target.numeric #count::-webkit-inner-spin-button {
+    display: none;
+}
+
+#goalPanel .target form #buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#goalPanel .target form #buttons button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-width: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 0 5px;
+    text-align: center;
+}
+
+#goalPanel .target form #buttons #increase {
+    background-color: green;
+}
+
+#goalPanel .target form #buttons #decrease {
+    background-color: red;
+}
+
+#goalPanel .target form #target-name {
+    flex: 1;
+    margin-right: 10px;
 }
 
 #goalPanel #add-target {
