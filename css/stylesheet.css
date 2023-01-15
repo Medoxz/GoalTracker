@@ -270,65 +270,120 @@ nav a {
     font-size: 16px;
 }
 
-
-
-
 /* ---------------------  goallist page ---------------------- */
+
+#progressPanel {
+    background-color: #81C6E8;
+    transform: translateY(-300%);
+    font-size: 24px;
+    width: 580px;
+    height: 60px;
+    border-radius: 10px;
+    padding : 20px;
+    overflow-x: auto;
+    position: absolute;
+}
+
+#progressText {
+    position: absolute;
+    transform: translateY(-100%);
+}
+
+#progressBorder {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: black;
+    width: 540px;
+    height: 20px;
+    position: absolute;
+    transform: translateY(150%);
+}
+
+#progressBar{
+    background-color: #09cad8;
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
 
 #listPanel {
     background-color: #81C6E8;
-    transform: translateY(15%);
+    transform: translateY(-15%);
     font-size: 24px;
     width: 580px;
     height: 290px;
     border-radius: 30px;
     padding : 20px;
+    overflow-x: auto;
+    position: absolute;
 }  
 
 #table {
-    border: 1px solid;
-    
+    border: 2px solid;
+    width : 100%;
+    border-collapse: collapse;
 }
 
-/* ---------------------  goallist page ---------------------- */
+#tableBody tr {
+    background-color: #09cad8;
+}
 
-#listPanel {
-    background-color: #81C6E8;
-    transform: translateY(15%);
-    font-size: 24px;
-    width: 580px;
-    height: 290px;
-    border-radius: 30px;
-    padding : 20px;
-}  
+#tableBody tr:nth-child(even){
+    background-color: #7DE5ED;
+}
 
-#table {
-    border: 1px solid;
-    
+
+#tableBody tr:hover {
+    background-color: #5DA7DB;
 }
 
 #table th {
     height: 30px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid black;
+    text-align: left;
+    background-color: #6595fd;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-#table td {
+#tableBody a {
+    display: flex;
+    text-decoration: none;
+  }
+
+#tableBody a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+#addPanel {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    border-color: black;
+    border-width: 5px;
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateY(110%);
 }
 
-#tableBody tr:hover {
-    background-color: #7DE5ED;
+#add-goal {
+    width: 250px;
+    background-color: #5DA7DB;
+    border-radius: 20px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px;
+    border: 0px;
 }
 
-#table th {
-    height: 30px;
-    border-bottom: 1px solid #ddd;
-}
-
-#table td {
-}
-
-#tableBody tr:hover {
-    background-color: #7DE5ED;
+#add-goal:hover {
+    background-color: #6595fd;
 }
 
 /* ------------------ Goal page ------------------------- */
@@ -340,6 +395,7 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    padding-left: 30px;
 }
 
 #goalPanel #details {
@@ -461,4 +517,9 @@ nav a {
     font-size: 40px;
     text-decoration: none;
     margin: 50px;
+    border: 0px;
+}
+
+#edit-goal:hover {
+    background-color: #6595fd;
 }
