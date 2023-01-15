@@ -457,12 +457,27 @@ nav a {
     grid-template-columns: 10px 1fr;
 }
 
+#goalPanel .target.monetary form {
+    grid-template-columns: 15px max-content min-content 15px 12fr 1fr max-content min-content;
+    gap: 0;
+}
+
 #goalPanel .target form #target-name {
     background-color: transparent;
     border-width: 0;
     border-bottom-width: 1px;
     min-width: 10px;
     width: 100%;
+}
+
+
+#goalPanel .target.target.monetary form input {
+    background-color: transparent;
+    border-width: 0;
+    border-bottom-width: 1px;
+    min-width: 10px;
+    width: 100%;
+    min-width: 3ch;
 }
 
 #goalPanel .target.numeric #counter,
@@ -477,10 +492,8 @@ nav a {
     text-align: center;
 }
 
-#goalPanel .target.numeric #counter::-webkit-outer-spin-button,
-#goalPanel .target.numeric #counter::-webkit-inner-spin-button,
-#goalPanel .target.numeric #count::-webkit-outer-spin-button,
-#goalPanel .target.numeric #count::-webkit-inner-spin-button {
+#goalPanel .target .no-number-arrows::-webkit-outer-spin-button,
+#goalPanel .target .no-number-arrows::-webkit-inner-spin-button {
     display: none;
 }
 

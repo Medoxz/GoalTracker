@@ -34,9 +34,9 @@
                         <form>
                             <span id="achieved"> X </span>
                             <input type="text" id="target-name">
-                            <input value=0 type="number" name="n-achieved" id="counter">
+                            <input value=0 type="number" name="n-achieved" id="counter" class="no-number-arrows">
                             <span id="divider">/</span>
-                            <input value=10 type="number" name="n-goal" id="count">
+                            <input value=10 type="number" name="n-goal" id="count" class="no-number-arrows">
                             <div id="buttons">
                                 <button id="increase">+</button>
                                 <button id="decrease">-</button>
@@ -50,6 +50,27 @@
                             <input type="text" id="target-name">
                         </form>
                     </div>
+
+                    <div class="target monetary">
+                        <form>
+                            <span id="achieved"> X </span>
+                            <span id="saved">Saved: $</span>
+                            <input type="number" name="amount-saved" id="amount-saved" class="no-number-arrows">
+                            <div id="empty"></div>
+                            <input type="text" list="time" id="amount-saved">
+                            
+                            <datalist id="time">
+                                <option>today</option>
+                                <option>this weekend</option>
+                                <option>this week</option>
+                                <option>this month</option>
+                            </datalist>
+                            <div id="empty"></div>
+                            <span>Goal: $</span>
+                            <input type="number" name="amount-goal" id="amount-goal" class="no-number-arrows">
+                        </form>
+                    </div>
+
                     <div id="add-target">
                         <form>
                             <button type="submit" id="add-button">+</button>
