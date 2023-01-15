@@ -50,6 +50,11 @@ nav li:hover {
 }
 
 nav a {
+    display:inline-block;
+    width:100%;
+}
+
+nav a {
     color: black;
     text-decoration: none;
 }
@@ -389,6 +394,7 @@ nav a {
 
 #add-goal:hover {
     background-color: #6595fd;
+    transition: 0.4s;
 }
 
 /* ------------------ Goal page ------------------------- */
@@ -596,6 +602,7 @@ nav a {
 
 #edit-goal:hover {
     background-color: #6595fd;
+    transition: 0.4s;
 }
 
 /* ------------------------- edit goal page ---------------------------- */
@@ -608,7 +615,7 @@ nav a {
     width: 500px;
     height: 500px;
     border-radius: 30px;
-    padding : 80px;
+    padding : 40px;
     align-items: center;
 }
 
@@ -628,7 +635,7 @@ nav a {
 }
 
 #editForm #description {
-    min-height: 210px;
+    min-height: 180px;
     padding: 10px;
     resize: none;
 }
@@ -666,4 +673,69 @@ nav a {
 
 #editGoalPanel a:hover {
     color: blue;
+}
+
+/* ------------------------- add goal page ---------------------------- */
+
+#addGoalPanel {
+    background-color: #81C6E8;
+    display:flex;
+    flex-direction: column;
+    font-size: 24px;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    padding : 40px;
+    align-items: center;
+}
+
+#addForm input,
+#addForm textarea {
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 35px;
+    border-width: 2px;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#addForm #description {
+    min-height: 180px;
+    padding: 10px;
+    resize: none;
+}
+
+#addForm h4 {
+    margin-block-start: 0;
+    margin-block-end: 35px;
+    font-size: 40px;
+}
+
+#addForm #addbutton {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#addForm #addbutton button {
+    background-color: #5DA7DB;
+    box-sizing: content-box;
+    min-width: 100px;
+    width: 100%;
+    max-width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    border-width: 0;
+}
+
+#addGoalPanel a {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: black;
 }
