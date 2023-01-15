@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href="/"><img src="Images/Logo.svg" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="goallist.html">Goals</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <div id="backPanel">
+        <div id="goalPanel">
+            <div id="details" >
+                <h1>Goal name</h1>
+                <h3>Description</h3>
+                <div id="description">lorem ipsum</div>
+                <h3>Due date</h3>
+                <div id="due-date">dd-mm-yy</div>
+                <h3>Targets</h3>
+                <div id="targets">
+                    <div class="target numeric">
+                        <form>
+                            <span id="achieved"> X </span>
+                            <input type="text" id="target-name">
+                            <input type="text" name="n-achieved" id="counter">
+                            <span id="divider">/</span>
+                            <input type="text" name="n-goal" id="count">
+                            <div id="buttons">
+                                <button id="increase">+</button>
+                                <button id="decrease">-</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="add-target">
+                        <form>
+                            <button type="submit" id="add-button">+</button>
+                            <select name="type" id="select-type">
+                                <option value="numeric">numeric</option>
+                                <option value="boolean">boolean</option>
+                                <option value="monetary">monetary</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="editPanel">
+                <div id="edit-goal"><a href="#""></a>Edit </a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

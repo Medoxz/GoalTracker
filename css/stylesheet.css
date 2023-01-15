@@ -5,7 +5,6 @@ body, html {
 
 body {
     min-height: 100vh;
-    height: fit-content;
     width: 100vw;
     max-width: 100%;
     margin: 0px;
@@ -39,8 +38,15 @@ nav ul {
 }
 
 nav li {
-    width: 90px;
-    margin: 0 20px;
+    width: 100px;
+    margin: 0px 20px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    background-color: #32d5e0;
 }
 
 nav a {
@@ -57,13 +63,11 @@ nav a {
 
 #backPanel {
     background-color: #7DE5ED;
-    min-height: 100vh;
+    min-height: calc(100vh - 150px);
     max-width: 90vw;
     position: relative;
-    bottom: 0;
-    top: 0; 
-    left: 50px;
-    right: 50px;
+    margin-right: auto;
+    margin-left: auto;
     z-index: 0;
     display: flex;
     justify-content: center;
@@ -76,7 +80,6 @@ nav a {
     background-color: #81C6E8;
     display:flex;
     flex-direction: column;
-    transform: translateY(15%);
     font-size: 24px;
     width: 290px;
     height: 290px;
@@ -140,7 +143,7 @@ nav a {
     box-sizing: border-box;
     padding : 80px;
     padding-left: 100px;
-    margin-top: 200px;
+    margin-top: 40px;
     margin-bottom: 50px;
     margin-left: 5px;
     margin-right: 5px;
@@ -328,3 +331,134 @@ nav a {
     background-color: #7DE5ED;
 }
 
+/* ------------------ Goal page ------------------------- */
+
+#goalPanel {
+    width: 100%;
+    height: 100%;
+    margin: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+#goalPanel #details {
+    width: 50%;
+}
+
+#goalPanel #description,
+#goalPanel #due-date,
+#goalPanel #targets {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #81C6E8;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#goalPanel #description {
+    min-height: 170px;
+}
+
+#goalPanel #targets {
+    min-height: 350px;
+}
+
+#goalPanel #editPanel {
+    width: 50%;
+    display: flex;
+    border-color: black;
+    border-width: 5px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#goalPanel .target {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #5DA7DB;
+    margin-bottom: 10px;
+}
+
+#goalPanel .target form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+#goalPanel .target form #target-name {
+    background-color: transparent;
+    border-width: 0;
+    border-bottom-width: 1px;
+}
+
+#goalPanel .target.numeric #counter,
+#goalPanel .target.numeric #count {
+    min-width: 5px;
+    width: auto;
+
+    background-color: transparent;
+    border-width: 0;
+    border-bottom-width: 1px;
+    margin: 5px;
+}
+
+#goalPanel #add-target {
+    min-width: max-content;
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ddd;
+}
+
+#goalPanel #add-target form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#goalPanel #add-button {
+    border-style: inset;
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#goalPanel #select-type {
+    border-style: inset;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+#edit-goal {
+    width: 250px;
+    background-color: #5DA7DB;
+    border-radius: 20px;
+    padding: 20px 0;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 50px;
+}
