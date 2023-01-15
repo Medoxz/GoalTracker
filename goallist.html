@@ -21,6 +21,12 @@
     </header>
      
     <div id="backPanel">
+        <div id="progressPanel">
+            <p id="progressText">Progress</p>
+            <div id="progressBorder">
+                <div id="progressBar">50%</div>
+            </div>
+        </div>
         <div id="listPanel">
             <table id="table">
                 <thead id="tableHead">
@@ -32,12 +38,20 @@
                 </thead>
                 <tbody id="tableBody">
                     <tr>
+                        <td><input type="checkbox" id="testCheckbox" name="testCheckbox" checked><label for="testCheckBox"></label></td>
+                        <td><a href="goal.html">This site</a></td>
+                        <td>16-1-2023</td>
+                    </tr>
+                    <tr>
                         <td><input type="checkbox" id="testCheckbox" name="testCheckbox"><label for="testCheckBox"></label></td>
-                        <td>This site</td>
+                        <td><a href="goal.html">Goal</a></td>
                         <td>16-1-2023</td>
                     </tr>
                 </tbody>   
             </table>
+        </div>
+        <div id="addPanel">
+            <button id="add-goal" onclick="document.location='addGoal.html'">ADD GOAL</button>
         </div>            
     </div>
     
