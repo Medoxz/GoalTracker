@@ -79,6 +79,87 @@ nav a {
     align-items: center;
 }
 
+/* ---------------------- Index/home page ---------------------- */
+
+#startpanel {
+    background-color: #7DE5ED;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 20%;
+}
+
+#startimage {
+    width: 200px;
+    height: 90%;
+    padding: 20px;
+    padding-left: 40px;
+    transform: rotateY(180deg);
+}
+
+#starttext {
+    font-size: 16px;
+    width: 290px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+#startnowbutton {
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #5DA7DB;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+#startnowbutton span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#startnowbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#startnowbutton:hover span {
+    padding-right: 25px;
+}
+
+#startnowbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+  
+
+#explanationpanel {
+    background-color: #7DE5ED;
+    width: 580px;
+    height:290px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border-radius: 20px;
+    transform: translateY(120%);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* ---------------------- Login page ---------------------- */
 
 #loginPanel {
@@ -364,7 +445,9 @@ nav a {
     text-decoration: none;
 }
 
-#tableBody a:link {
+#tableBody a:link, 
+#tableBody a:visited,
+#tableBody a:active {
     color: black;
     background-color: transparent;
     text-decoration: none;
