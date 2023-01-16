@@ -89,7 +89,7 @@ nav a {
     display: flex;
     flex-direction: row;
     text-align: center;
-    padding-left: 20%;
+    justify-content: center;
 }
 
 #startimage {
