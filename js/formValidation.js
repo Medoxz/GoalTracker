@@ -1,3 +1,30 @@
+/* ---------------------- Behavorial tracking ------------------------*/
+const timeStarted = new Date().getTime();
+const behavior = document.getElementById('behavior');
+const mouseClicks = behavior.querySelector('.mouseClicks');
+const keyPress = behavior.querySelector('.keyPress');
+var mouseCounter = 0;
+var keyPressCounter = 0;
+
+
+const calculateTimeSpent = () => {
+    const timeEnded = new Date().getTime();
+    let totalTimeSpent = (timeEnded - timeStarted) / 1000;
+
+    const timeSpent = behavior.querySelector('.timeSpent');
+    timeSpent.innerText = 'Total time spent: ' + totalTimeSpent + ' seconds';
+}
+
+document.addEventListener('click', e => {
+    mouseCounter++;
+})
+
+document.addEventListener('keypress', e => {
+    keyPressCounter++;
+})
+
+
+/* ---------------------- Validation of form -------------------------*/
 const form = document.getElementById('registerForm');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -26,8 +53,11 @@ form.addEventListener('submit', e => {
     let validateForm = usernameCheck && emailCheck && passwordCheck && nameCheck && zipcodeCheck && countryCheck && languageCheck && sexCheck;
 
     if(validateForm){
+        behavior.hidden = false;
+        calculateTimeSpent();
+        mouseClicks.innerText = 'Total amount of mouse clicks: ' + mouseCounter;
+        keyPress.innerText = 'Total amount of key presses: ' + keyPressCounter;
         alert("This is your information:\nUsername: " + username.value.trim() + "\nName: " + fullname.value.trim() + "\nEmail: " + email.value.trim() + "\nZipcode: " + zipcode.value.trim());
-        window.location.href = "account.html";
     }
 });
 
