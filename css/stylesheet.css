@@ -249,7 +249,7 @@ nav a {
 
 #registerPanel h3 {
     line-height: 0;
-    padding-top: 75px;
+    padding-top: 40px;
     font-size: 30px;
 }
 
@@ -259,7 +259,7 @@ nav a {
 }
 
 #registerPanel label {
-    padding-top: 25px;
+    padding-top: 0px;
     font-size: 24px;
 }
 
@@ -284,7 +284,6 @@ nav a {
     border-width: 2px;
     box-sizing: border-box;
     margin-right: 30px;
-    margin-bottom: 40px;
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -311,6 +310,76 @@ nav a {
     border-radius: 30px;
     font-size: 24px;
     border-width: 0;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    color: #ff3860;
+    font-size: 9px;
+}
+
+.input-control select {
+    border-color: black;
+    color: black;
+}
+
+.input-control label{
+    color: black;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+    color: black;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+    color: black;
+}
+
+.input-control.mid input {
+    border-color: orange;
+    color:black;
+}
+
+.input-control.success select {
+    border-color: #09c372;
+    color: black;
+}
+
+.input-control.error select {
+    border-color: #ff3860;
+    color: black;
+}
+
+.input-control.mid select {
+    border-color: orange;
+    color:black;
+}
+
+.input-control.success .error{
+    color:#09c372;
+    font-size: 14px;
+}
+
+.input-control.error .error{
+    color: #ff3860;
+    font-size: 14px;
+}
+
+.input-control.mid .error{
+    color:orange;
+    font-size: 14px;
+}
+
+.optional{
+    color: black;
+    font-size: 14px;
 }
 
 /* ---------------------  account page  ---------------------- */
