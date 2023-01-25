@@ -23,6 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 20;
 }
 
 nav {
@@ -380,6 +381,19 @@ nav a {
 .optional{
     color: black;
     font-size: 14px;
+}
+
+#behavior {
+    position: absolute;
+    background-color: #09c372;
+    z-index: 10;
+    height: 200px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 /* ---------------------  account page  ---------------------- */
