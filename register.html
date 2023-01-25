@@ -22,68 +22,82 @@
     
     <div id="backPanel">
         <div id="registerPanel">
-            <h1>Create your account</h1>
             <form action="" id="registerForm">
-                <label for="username">Username</label>
-                <input required type="text" name="uname" id="uname">
-                <label for="password">Password</label>
-                <input required type="password" name="password" id="password">
+                <h1>Create your account</h1>
+                <div id = "container">
+                    <div class = "input-control">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username">
+                        <div class = "error"></div>
+                    </div>
+                    <div class = "input-control">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                        <div class = "error"></div>
+                    </div>
+                </div>
+
                 <h3>Personal info</h3>
                 <div class="grid-container">
-                    <div>
-                        <label for="fullname">Full name</label>
-                        <input required type="text" name="fullname" id="fullname">
+                    <div class="input-control">
+                        <label for="fullname">Name</label>
+                        <input type="text" name="fullname" id="fullname">
+                        <div class="error"></div>
                     </div>
-
-                    <div>
+                    <div class = "input-control">
                         <label for="sex">Sex</label>
-                        <select required name="sex" id="sex-select">
+                        <select name="sex" id="sex">
                             <option disabled selected hidden value="">Please choose</option>
                             <option value="m">Male</option>
                             <option value="f">Female</option>
                             <option value="other">Other</option>
                         </select>
+                        <div class = "error"></div>
                     </div>
 
-                    <div>
+                    <div class = "input-control">
                         <label for="language">Language</label>
-                        <select required name="language" id="language">
+                        <select name="language" id="language">
                             <option disabled selected hidden value="">Please choose</option>
                             <option value="nl">Nederlands</option>
                             <option value="en">Engels</option>
                         </select>
+                        <div class = "error"></div>
                     </div>
                     
-                    <div>
+                    <div class="input-control">
                         <label for="address">Address</label>
-                        <input required type="text" name="address" id="address">
+                        <input type="text" name="address" id="address">
+                        <div class="optional">This field is optional</div>
                     </div>
 
-                    <div>
-                        <label for="zip-code">ZIP Code</label>
-                        <input required type="text" name="zip-code" id="zip-code">
+                    <div class = "input-control">
+                        <label for="zipcode">ZIP Code</label>
+                        <input type="text" name="zipcode" id="zipcode">
+                        <div class="error"></div>
                     </div>
                     
-                    <div>
+                    <div class = "input-control">
                         <label for="country">Country</label>
-                        <select required  name="country" id="country">
+                        <select name="country" id="country">
                             <option disabled selected hidden value="">Please choose</option>
                             <option value="nl">Nederland</option>
                             <option value="en">Engeland</option>
                             <option value="usa">United States of America</option>
                         </select>
+                        <div class = "error"></div>
                     </div>
-
-                    <div>
+                    <div class = "input-control">
                         <label for="email">Email</label>
-                        <input required type="email" name="email" id="email">
+                        <input type="email" name="email" id="email">
+                        <div class = "error"></div>
                     </div>
-
                 </div>
-
-                <label for="personal-bio">Personal bio</label>
-                <textarea name="personal-bio" id="personal-bio" cols="30" rows="1"></textarea>
-
+                <div class = "input-control">
+                    <label for="personal-bio">Personal bio</label>
+                    <textarea name="personal-bio" id="personal-bio" cols="30" rows="1"></textarea>
+                    <div class = "optional">This field is optional</div>
+                </div>
                 <button type="submit" id="submit-button">Submit</button>
             </form>
         </div>
@@ -91,6 +105,6 @@
     </div>
 
     
-    <script src="js/tempFormScript.js"></script>
+    <script src="js/formValidation.js"></script>
 </body>
 </html>
