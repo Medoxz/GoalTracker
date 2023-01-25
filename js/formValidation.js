@@ -75,7 +75,7 @@ const setError = (element, message) => {
 
 const setNotErrorOrSuccess = (element, message) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelectorAll('.error');
+    const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = message;
     inputControl.classList.add('mid')
